@@ -6,8 +6,9 @@ if (n<=0) {
     return 0;
 }
 string [] newArray = new string [n];
-Console.Write ($"Введите {n} элементов массива ");
+
 for (int i =0; i<newArray.Length; i++) {
+Console.Write ($"Введите {i+1} элемент массива ");
 newArray[i] = Console.ReadLine();
 }
 // Подсчет элементов <=3
