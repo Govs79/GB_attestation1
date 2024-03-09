@@ -18,14 +18,16 @@ for (int i =0; i<newArray.Length; i++) {
     }
 // Занесение элементов <=3 в массив
 string [] redlineArray = new string[m];
-for (int i=0; i<m; i++) {
+int j = 0;
+for (int i=0; i<newArray.Length; i++) {
     if (newArray[i].Length <= 3){
-        redlineArray[i] = newArray[i];
+        redlineArray[j] = newArray[i];
+        j++;
     }
    }
 
 // Вывод массива исходного
-Console.Write("Введенные элементы массива ");
+Console.WriteLine("Введенные элементы массива ");
 for (int i=0; i<newArray.Length; i++)
 {
 Console.Write($"{newArray[i]}" + "||");}
